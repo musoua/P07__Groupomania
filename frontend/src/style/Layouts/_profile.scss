@@ -1,0 +1,85 @@
+.profile {
+    width:95%;
+    max-width: 600px;
+    padding:15px;
+    margin: 110px auto 0 auto;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius:5px;
+    box-shadow: 2px 5px 10px 0px $color-tertiary;
+    @include silver;
+
+    &__img__container {
+        width:150px;
+        height:150px;
+        border-radius:50%;
+        overflow: hidden;
+    }
+
+    &__img {
+        height:100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__username {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    &__bio {
+        width:100%;
+        padding:20px;
+        text-align: justify;
+        border-bottom:1px solid $color-secondary;
+    }
+
+    &__management {
+        width:100%;
+        display: flex;
+        flex-direction: row;
+
+        &__btn {
+            width:50%;
+            padding:10px;
+            line-height: 20px;
+            display: flex;
+            flex-direction: column;
+
+            & .tooltiptext {
+                color: $color-secondary;
+                display: inline-block;
+                opacity: 0;
+                margin-top: 5px;
+                font-size: 14px;
+                transition: all 0.3s ease;
+            }
+
+            & i {
+                font-size: 25px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+
+            &:hover .tooltiptext {
+                opacity: 1;
+            }
+
+            &:hover i {
+                color: $color-secondary;
+                transform: scale(1.2);
+            }
+
+            &:focus .tooltiptext {
+                opacity: 1;
+            }
+
+            &:focus i {
+                color: $color-secondary;
+            }
+        }
+    }
+}

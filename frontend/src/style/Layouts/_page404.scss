@@ -1,0 +1,24 @@
+.error__bloc {
+    margin:200px auto 0 auto;
+    padding: 25px;
+    width:95%;
+    max-width: 600px;
+    &__heading {
+        font-size: 70px;
+        color:white;
+    }
+
+    &__text {
+        margin-top: 30px;
+        font-weight: 800;
+        color: black;
+    }
+
+    img {
+        display: inline-block;
+        width: 100%;
+        max-width: 800px;
+        border: 5px solid black;
+        border-radius: 50%;
+    }
+}

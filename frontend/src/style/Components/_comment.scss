@@ -1,0 +1,36 @@
+.comment__container {
+    margin:0 auto 20px auto;
+}
+
+.comment {
+    background: $color-primary;
+    padding:20px;
+    border-radius:20px;
+
+    &__size {
+        text-align: left;
+    }
+
+    &__config {
+        display:flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        padding-top:10px;
+
+        &__btn {
+            display:inline-block;
+            width:15%;
+            cursor: pointer;
+
+            & i {
+                transition:all 0.3s ease;
+            }
+
+            &:hover i {
+                color: $color-secondary;
+                transform: scale(1.2);
+            }
+        }
+    }
+}

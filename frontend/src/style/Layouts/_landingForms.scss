@@ -1,0 +1,28 @@
+.signup, .login{
+    width:80%;
+    max-width: 550px;
+    margin: auto;
+    border-radius:15px;
+    box-shadow: 5px 2px 15px 5px $color-tertiary;
+    @include silver;
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        margin: 0 auto;
+        padding:20px;
+
+        &__label {
+            margin: 15px 0px 5px;
+        }
+
+        &__input {
+            width:90%;
+            margin: 5px auto;
+            padding: 5px;
+            height:30px;
+            border: 2px solid $color-secondary;
+        }
+    }
+}

@@ -1,0 +1,131 @@
+.post__form__container {
+    margin:110px auto 10px auto;
+    width:95%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    border-radius:5px;
+    box-shadow: 2px 5px 10px 0px $color-tertiary;
+    @include silver;
+}
+
+.post__form__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 15px;
+    height:70px;
+
+    &__title {
+        font-size: 20px;
+    }
+
+    &__btn {
+        width:25px;
+        height:25px;
+        font-size: 25px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.2);
+            color: $color-secondary;
+        }
+    }
+}
+
+.avatar__container {
+    flex-shrink: 0;
+    border-radius:50%;
+    height:50px;
+    width:50px;
+    overflow: hidden;
+}
+.avatar {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.post__form {
+    width:90%;
+    margin: 0 auto;
+
+    &__bloc {
+        margin: 10px 0px;
+
+        &__label {
+            font-size: 15px;
+            display: block;
+            text-align: left;
+        }
+
+        &__input {
+            width:100%;
+            margin: 5px auto;
+            padding: 10px;
+            height:30px;
+        }
+
+        &__textarea {
+            width:100%;
+            margin: 5px auto;
+            padding: 10px;
+            height:80px;
+            font-family: 'Roboto', Helvetica, Arial, sans-serif;
+        }
+
+        &__submit-btn {
+            font-size: 30px;
+            line-height: 40px;
+            border-radius:50px;
+            border:none;
+            color: $color-tertiary;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: none;
+
+            &:hover {
+                color: $color-secondary;
+                transform: scale(1.2);
+            }
+        }
+
+        &__file__label {
+            cursor: pointer;
+            font-size: 30px;
+            line-height: 40px;
+
+            & i {
+                transition: all 0.3s ease;
+            }
+
+            &:hover i {
+                color: $color-secondary;
+                transform: scale(1.2);
+            }
+        }
+
+        &__file__input {
+            display:none;
+        }
+    }
+}
+
+.btn__bloc__container {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn__bloc {
+    width:50%;
+    height:40px;
+    line-height: 20px;
+}
+
+@media screen and (max-width:350px){
+    .post__form__header__title {
+        font-size: 13px;
+    }
+}

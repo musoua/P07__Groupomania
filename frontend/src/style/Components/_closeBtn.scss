@@ -1,0 +1,12 @@
+.close_btn {
+    position:absolute;
+    top:5px;
+    right:15px;
+    color: $color-secondary;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.5);
+    }
+}
