@@ -1,24 +1,22 @@
-# frontend
+SPECIFICATIONS DE L'APPLICATION FRONTEND
 
-## Project setup
-```
-npm install
-```
+TECHNOLOGIE
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Framework :
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Le projet a été développé avec Vue.js (version 2)
 
-### Lints and fixes files
-```
-npm run lint
-```
+Pré-processeur CSS :
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Le projet a été développé avec SASS
+
+Packages utilisés :
+
+    Vue CLI
+    
+    Vuex
+    
+    Vue-router
+    
+    Axios
+ 
